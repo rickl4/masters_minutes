@@ -1,11 +1,19 @@
-# 2021-09-29 Minutes
+# 2021-10-13
 
-## Global Efficiency with Random Removal
+## Connectivity
 
-* Targeted removal based off _General Population Weighted Betweenness Centrality_ will always show the General Population as the group thats most impacted
+![All Modes](https://github.com/rickl4/masters_minutes/blob/main/2021-10-13/img/2021-10-13.png)
 
-* Global Efficiency does not model bus diversions; diversions can't be modeled by graph networks
-    * Link removals analagous to subway disruption where service cannot be diverted, and the line is split into multiple independent segments
+
+* Connectivity measures the redundancy of service and benefits zones with large connecting hubs
+    * Connecting hubs are stops with many routes and frequencies connected to it
+
+### Changes Since June
+
+* Networkx had issues with multiple parallel edges in a directed graph (MultiDiGraph). Not all algorithms were available
+
+* Network was changed to a directed graph/Route Map Graph, where each edge has a frequency weight
+    * There can only be 1 edge from a stop to another stop, but that edge contains information on the frequency of the edge.
 
 * Random removal will randomly remove links from the graph model, then recalculate travel times
     * Prone to less bias than targeted removal
@@ -22,7 +30,6 @@
 
 * Carless households/Low Income are more likely to live in areas with more redundant transit networks and travel to destinations where walking is a viable mode
 
-![All Modes](https://github.com/rickl4/masters_minutes/blob/main/2021-09-29/img/GE-Random_Graph.png)
+![All Modes](https://github.com/rickl4/masters_minutes/blob/main/2021-10-13/img/connectivity_od_weighted.png)
 
-![All Modes](https://github.com/rickl4/masters_minutes/blob/main/2021-09-29/img/GE-Random_Heatmap.png)
 
