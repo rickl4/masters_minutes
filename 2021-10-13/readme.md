@@ -24,7 +24,7 @@
     2. For each trip, find connectivity score by averaging origin ward and destination ward scores
     3. Average the results for each equity group
 
-* *Next steps*: find out the relationships between equity group population in ward, and connectivity score.
+* **Next steps**: find out the relationships between equity group population in ward, and connectivity score.
 
 #### Ward OD Trips
 * Found by summing the TTS Zones OD Trips
