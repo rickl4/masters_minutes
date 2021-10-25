@@ -48,22 +48,24 @@
     2. Some variables are related to other variables. A person can be considered to have a low-income, without a car, and a person of colour.
     3. When graphed individually, many of these variables have no effect on the connectivity scores (used `scipy.stats.pearsonr`, for R and P)
 
-* **Next steps**: find out the relationships between equity group population in ward, and connectivity score.
+## Real World Data
 
-#### Ward OD Trips
-* Found by summing the TTS Zones OD Trips
-* If more than 7.5% of zone lie in another ward, the trips were proportionally allocated by area
-    * 7.5% found by visual inspection
+* If we want to use real world data/incidents, the GE, and NX (connectivity, clustering, cycles) measures should be the focus since they are quick to calculate
+* To continue the theme of the project, we need delay data for buses, in addition to buses and streetcars
+* We can analyze delays for buses and streetcars separately, but we should devise a separate analysis that involves buses if no bus delay data exists (since we know that certain groups, such as Black residents, rely on Streetcars far less than the general population)
 
-#### Table Format
+    * If we use delay data from 2017/2018, would we need to create a new graph that uses a 2017/2018 GTFS?
 
-| Period | Black | Low Income | LEP  | General Population | Carless Households | Racialized | Recent Immigrants |
-|--------|-------|------------|------|--------------------|--------------------|------------|-------------------|
-| EM     | 7.1   | 8.0        | 7.8  | 7.7                | 7.6                | 7.5        | 7.8               |
-| AM     | 79.8  | 82.7       | 83.2 | 84.6               | 85.4               | 85.7       | 87.2              |
-| MD     | 53.0  | 54.8       | 53.5 | 54.8               | 55.7               | 55.2       | 56.3              |
-| PM     | 78.1  | 79.6       | 79.8 | 81.9               | 83.0               | 82.7       | 83.7              |
-| EV     | 48.0  | 50.6       | 49.2 | 50.2               | 51.2               | 50.7       | 51.4              |
 
-![All Modes](https://github.com/rickl4/masters_minutes/blob/main/2021-10-13/img/connectivity_od_weighted.png)
+### Real World Data Incorporating Buses
 
+* If cleaned historical AVL data exists (from a previous study), we can pick multiple days, create a graph based on real world data, run the analysis for those days, and compare to our baseline 2016 graph
+* If only unclean data exists, we need to spend additional effort determining the time a bus arrives at each stop
+
+## Planned Work for Nov 17
+
+* Cycle analysis
+* Reconstruct the Route map graph to account for low fequencies in the early morning period (by using a 2 hour representative period instead of 1 hour)
+* Neighbouring Node analysis
+* Complexity Analysis
+* If possible, finish the regression analysis
