@@ -1,11 +1,9 @@
-# 2021-10-27
+# 2021-11-17
 
 ## Clustering
 
 * Average neighbour degree takes the average degree of nodes surrounding the node
 * Similar in purpose to the cluster coefficient, but more intuitive to understand and better suited for Toronto's bus network
-
-![All Modes](https://github.com/rickl4/masters_minutes/blob/main/2021-11-17/img/nearest_neighbour.png)
 
 | Period | Black | Low Income | LEP   | General Population | Carless Households | Racialized | Recent Immigrants |
 |--------|-------|------------|-------|--------------------|--------------------|------------|-------------------|
@@ -14,6 +12,8 @@
 | MD     | 0.523 | 0.520      | 0.530 | 0.543              | 0.544              | 0.526      | 0.530             |
 | PM     | 0.704 | 0.688      | 0.712 | 0.728              | 0.736              | 0.717      | 0.719             |
 | EV     | 0.474 | 0.471      | 0.483 | 0.491              | 0.494              | 0.481      | 0.483             |
+
+![All Modes](https://github.com/rickl4/masters_minutes/blob/main/2021-11-17/img/nearest_neighbour.png)
 
 ## Cycle Density
 
