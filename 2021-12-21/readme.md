@@ -15,7 +15,7 @@ elif shortest_path_travel_time > 120:
     additional_time = 10
 
 ```
-
+|------|------|
 |![](path_gamma.png) |![](distinct_path_eqn.png)|
 
 
