@@ -3,10 +3,10 @@
 ## Choosing Analysis Dates
 
 
-![](bus_count-delay.png)
-![](streetcar_count-delay.png)
-![](subway_count-delay.png)
-![](subway_count-delay-major.png)
+![](bus_-count-delay.png)
+![](streetcar-count-delay.png)
+![](subway-count-delay.png)
+![](subway-count-delay-major.png)
 
 ## Chosen Dates
 
