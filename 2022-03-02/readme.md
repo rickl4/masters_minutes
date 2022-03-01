@@ -121,11 +121,11 @@
 
 ### Preliminary Results
 
-![](summary_ttt.png)
-
 * Outliers for EM period at Dec 17, Dec 20, Dec 23
 * In  most cases, the real time results are consistently lower than the GTFS, except for the EM period
 * 1 or 2 dates with disruption for each period
+
+![](summary_ttt.png)
 
 ![](summary_ge.png)
 
