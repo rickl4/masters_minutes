@@ -119,7 +119,7 @@
 | 2019-12-18 | PM     | 15438 | 157     | 0         | 2          | 159   | 1.03 |
 | 2019-12-17 | PM     | 15767 | 139     | 0         | 2          | 141   | 0.89 |
 
-### Preliminary Results
+## Preliminary Results
 
 * Outliers for EM period at Dec 17, Dec 20, Dec 23
 * In  most cases, the real time results are consistently lower than the GTFS, except for the EM period
@@ -129,3 +129,7 @@
 
 ![](summary_ge.png)
 
+## Next Steps
+
+* Seperate results into equity groups
+* Determine a way to see if equity groups are disproportionally impacted/not impaced
