@@ -3,6 +3,9 @@
 ## Real Time Data Update
 
 * Graph was built with next train arrival data
+
+### Next Train Arrival Data
+
 * Removed links between non-adjacent station
 * Peak error rate was 3.3%, median error was 1.9%
 
